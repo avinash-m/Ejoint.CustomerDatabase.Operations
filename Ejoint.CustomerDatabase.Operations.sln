@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejoint.CustomerDatabase.Operations", "Ejoint.CustomerDatabase.Operations\Ejoint.CustomerDatabase.Operations.csproj", "{71958B2A-8B80-4940-9823-E890809B4C14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71958B2A-8B80-4940-9823-E890809B4C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71958B2A-8B80-4940-9823-E890809B4C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71958B2A-8B80-4940-9823-E890809B4C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71958B2A-8B80-4940-9823-E890809B4C14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06420E06-9A4D-4F29-8AD3-5B4B774E8DE1}
+	EndGlobalSection
+EndGlobal
