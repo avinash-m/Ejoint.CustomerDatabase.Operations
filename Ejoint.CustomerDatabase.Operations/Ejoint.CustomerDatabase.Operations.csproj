@@ -44,5 +44,11 @@
     <Compile Include="ICustomerDatabaseContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ejoint.CustomerDatabase.Model\Ejoint.CustomerDatabase.Model.csproj">
+      <Project>{3f91e032-6833-4180-bcf4-2df8346cc6f7}</Project>
+      <Name>Ejoint.CustomerDatabase.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

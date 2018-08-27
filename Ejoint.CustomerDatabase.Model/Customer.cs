@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Ejoint.CustomerDatabase.Ejoint.CustomerDatabase.Model
+namespace Ejoint.CustomerDatabase.Model
 {
-    class Customer
+    public class Customer
     {
         public int ID { get; set; }
         public string FirstName { get; set; }

@@ -2,7 +2,7 @@
 
 namespace Ejoint.CustomerDatabase.Model
 {
-    class Payment
+    public class Payment
     {
         public int ID { get; set; }
         public int OrderID { get; set; }

@@ -2,7 +2,7 @@
 
 namespace Ejoint.CustomerDatabase.Model
 {
-    class Login
+    public class Login
     {
         public int ID { get; set; }
         public string UserName { get; set; }
