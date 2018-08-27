@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Customer.cs" />
+    <Compile Include="ICustomerDatabaseContract.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Payment.cs" />
