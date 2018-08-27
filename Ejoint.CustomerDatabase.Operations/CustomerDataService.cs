@@ -58,7 +58,42 @@ namespace Ejoint.CustomerDatabase.Operations
 
         public List<Customer> GetCustomerDetails()
         {
-            throw new NotImplementedException();
+            List<Customer> customerList = new List<Customer>();
+
+            try
+            {
+                conn.Open();
+                cmd.CommandText = "usp_GetALL";
+                cmd.CommandType = CommandType.StoredProcedure;
+                sdr = cmd.ExecuteReader();
+
+                if (sdr.HasRows)
+                {
+                    while (sdr.Read())
+                    {
+                        Customer customer = new Customer();
+                        customer.ID = (int)sdr["ID"];
+                        customer.FirstName = sdr["FirstName"].ToString();
+                        customer.LastName = sdr["LastName"].ToString();
+                        customer.DOB = (DateTime)sdr["DOB"];
+                        customer.Gender = (char)sdr["Gender"];
+                        customer.CreatedDate = (DateTime)sdr["CreatedDate"];
+                        customer.UpdatedDate = (DateTime)sdr["UpdatedDate"];
+                        customer.IsActive = (bool)sdr["IsActive"];
+                        customerList.Add(customer);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return customerList;
         }
 
         public int SaveCustomer(Customer customer)
